@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9641A0841966E67100C89FD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641A0831966E67100C89FD9 /* Cocoa.framework */; };
+		9641A08E1966E67100C89FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9641A08C1966E67100C89FD9 /* InfoPlist.strings */; };
+		9641A0901966E67100C89FD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A08F1966E67100C89FD9 /* main.m */; };
+		9641A0941966E67100C89FD9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9641A0921966E67100C89FD9 /* Credits.rtf */; };
+		9641A0971966E67100C89FD9 /* LTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A0961966E67100C89FD9 /* LTDocument.m */; };
+		9641A09A1966E67100C89FD9 /* LTDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9641A0981966E67100C89FD9 /* LTDocument.xib */; };
+		9641A09D1966E67100C89FD9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9641A09B1966E67100C89FD9 /* MainMenu.xib */; };
+		9641A0A01966E67100C89FD9 /* LTDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9641A09E1966E67100C89FD9 /* LTDocument.xcdatamodeld */; };
+		9641A0A21966E67100C89FD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9641A0A11966E67100C89FD9 /* Images.xcassets */; };
+		9641A0A91966E67100C89FD9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641A0A81966E67100C89FD9 /* XCTest.framework */; };
+		9641A0AA1966E67100C89FD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641A0831966E67100C89FD9 /* Cocoa.framework */; };
+		9641A0B21966E67100C89FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9641A0B01966E67100C89FD9 /* InfoPlist.strings */; };
+		9641A0B41966E67100C89FD9 /* LogTailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A0B31966E67100C89FD9 /* LogTailTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9641A0AB1966E67100C89FD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9641A0781966E67100C89FD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9641A07F1966E67100C89FD9;
+			remoteInfo = LogTail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9641A0801966E67100C89FD9 /* LogTail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogTail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9641A0831966E67100C89FD9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9641A0861966E67100C89FD9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9641A0871966E67100C89FD9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9641A0881966E67100C89FD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9641A08B1966E67100C89FD9 /* LogTail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogTail-Info.plist"; sourceTree = "<group>"; };
+		9641A08D1966E67100C89FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9641A08F1966E67100C89FD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9641A0911966E67100C89FD9 /* LogTail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogTail-Prefix.pch"; sourceTree = "<group>"; };
+		9641A0931966E67100C89FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9641A0951966E67100C89FD9 /* LTDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTDocument.h; sourceTree = "<group>"; };
+		9641A0961966E67100C89FD9 /* LTDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTDocument.m; sourceTree = "<group>"; };
+		9641A0991966E67100C89FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LTDocument.xib; sourceTree = "<group>"; };
+		9641A09C1966E67100C89FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9641A09F1966E67100C89FD9 /* LTDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LTDocument.xcdatamodel; sourceTree = "<group>"; };
+		9641A0A11966E67100C89FD9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9641A0A71966E67100C89FD9 /* LogTailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogTailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9641A0A81966E67100C89FD9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9641A0AF1966E67100C89FD9 /* LogTailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogTailTests-Info.plist"; sourceTree = "<group>"; };
+		9641A0B11966E67100C89FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9641A0B31966E67100C89FD9 /* LogTailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogTailTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9641A07D1966E67100C89FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9641A0841966E67100C89FD9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9641A0A41966E67100C89FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9641A0AA1966E67100C89FD9 /* Cocoa.framework in Frameworks */,
+				9641A0A91966E67100C89FD9 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9641A0771966E67100C89FD9 = {
+			isa = PBXGroup;
+			children = (
+				9641A0891966E67100C89FD9 /* LogTail */,
+				9641A0AD1966E67100C89FD9 /* LogTailTests */,
+				9641A0821966E67100C89FD9 /* Frameworks */,
+				9641A0811966E67100C89FD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9641A0811966E67100C89FD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9641A0801966E67100C89FD9 /* LogTail.app */,
+				9641A0A71966E67100C89FD9 /* LogTailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9641A0821966E67100C89FD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9641A0831966E67100C89FD9 /* Cocoa.framework */,
+				9641A0A81966E67100C89FD9 /* XCTest.framework */,
+				9641A0851966E67100C89FD9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9641A0851966E67100C89FD9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9641A0861966E67100C89FD9 /* AppKit.framework */,
+				9641A0871966E67100C89FD9 /* CoreData.framework */,
+				9641A0881966E67100C89FD9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9641A0891966E67100C89FD9 /* LogTail */ = {
+			isa = PBXGroup;
+			children = (
+				9641A0951966E67100C89FD9 /* LTDocument.h */,
+				9641A0961966E67100C89FD9 /* LTDocument.m */,
+				9641A0981966E67100C89FD9 /* LTDocument.xib */,
+				9641A09B1966E67100C89FD9 /* MainMenu.xib */,
+				9641A0A11966E67100C89FD9 /* Images.xcassets */,
+				9641A09E1966E67100C89FD9 /* LTDocument.xcdatamodeld */,
+				9641A08A1966E67100C89FD9 /* Supporting Files */,
+			);
+			path = LogTail;
+			sourceTree = "<group>";
+		};
+		9641A08A1966E67100C89FD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9641A08B1966E67100C89FD9 /* LogTail-Info.plist */,
+				9641A08C1966E67100C89FD9 /* InfoPlist.strings */,
+				9641A08F1966E67100C89FD9 /* main.m */,
+				9641A0911966E67100C89FD9 /* LogTail-Prefix.pch */,
+				9641A0921966E67100C89FD9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9641A0AD1966E67100C89FD9 /* LogTailTests */ = {
+			isa = PBXGroup;
+			children = (
+				9641A0B31966E67100C89FD9 /* LogTailTests.m */,
+				9641A0AE1966E67100C89FD9 /* Supporting Files */,
+			);
+			path = LogTailTests;
+			sourceTree = "<group>";
+		};
+		9641A0AE1966E67100C89FD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9641A0AF1966E67100C89FD9 /* LogTailTests-Info.plist */,
+				9641A0B01966E67100C89FD9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9641A07F1966E67100C89FD9 /* LogTail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9641A0B71966E67100C89FD9 /* Build configuration list for PBXNativeTarget "LogTail" */;
+			buildPhases = (
+				9641A07C1966E67100C89FD9 /* Sources */,
+				9641A07D1966E67100C89FD9 /* Frameworks */,
+				9641A07E1966E67100C89FD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogTail;
+			productName = LogTail;
+			productReference = 9641A0801966E67100C89FD9 /* LogTail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9641A0A61966E67100C89FD9 /* LogTailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9641A0BA1966E67100C89FD9 /* Build configuration list for PBXNativeTarget "LogTailTests" */;
+			buildPhases = (
+				9641A0A31966E67100C89FD9 /* Sources */,
+				9641A0A41966E67100C89FD9 /* Frameworks */,
+				9641A0A51966E67100C89FD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9641A0AC1966E67100C89FD9 /* PBXTargetDependency */,
+			);
+			name = LogTailTests;
+			productName = LogTailTests;
+			productReference = 9641A0A71966E67100C89FD9 /* LogTailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9641A0781966E67100C89FD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Mandrake.net;
+				TargetAttributes = {
+					9641A0A61966E67100C89FD9 = {
+						TestTargetID = 9641A07F1966E67100C89FD9;
+					};
+				};
+			};
+			buildConfigurationList = 9641A07B1966E67100C89FD9 /* Build configuration list for PBXProject "LogTail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9641A0771966E67100C89FD9;
+			productRefGroup = 9641A0811966E67100C89FD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9641A07F1966E67100C89FD9 /* LogTail */,
+				9641A0A61966E67100C89FD9 /* LogTailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9641A07E1966E67100C89FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9641A09A1966E67100C89FD9 /* LTDocument.xib in Resources */,
+				9641A0A21966E67100C89FD9 /* Images.xcassets in Resources */,
+				9641A08E1966E67100C89FD9 /* InfoPlist.strings in Resources */,
+				9641A0941966E67100C89FD9 /* Credits.rtf in Resources */,
+				9641A09D1966E67100C89FD9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9641A0A51966E67100C89FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9641A0B21966E67100C89FD9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9641A07C1966E67100C89FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9641A0971966E67100C89FD9 /* LTDocument.m in Sources */,
+				9641A0901966E67100C89FD9 /* main.m in Sources */,
+				9641A0A01966E67100C89FD9 /* LTDocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9641A0A31966E67100C89FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9641A0B41966E67100C89FD9 /* LogTailTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9641A0AC1966E67100C89FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9641A07F1966E67100C89FD9 /* LogTail */;
+			targetProxy = 9641A0AB1966E67100C89FD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9641A08C1966E67100C89FD9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9641A08D1966E67100C89FD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9641A0921966E67100C89FD9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9641A0931966E67100C89FD9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9641A0981966E67100C89FD9 /* LTDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9641A0991966E67100C89FD9 /* Base */,
+			);
+			name = LTDocument.xib;
+			sourceTree = "<group>";
+		};
+		9641A09B1966E67100C89FD9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9641A09C1966E67100C89FD9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9641A0B01966E67100C89FD9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9641A0B11966E67100C89FD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9641A0B51966E67100C89FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9641A0B61966E67100C89FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9641A0B81966E67100C89FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
+				INFOPLIST_FILE = "LogTail/LogTail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9641A0B91966E67100C89FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
+				INFOPLIST_FILE = "LogTail/LogTail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9641A0BB1966E67100C89FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LogTail.app/Contents/MacOS/LogTail";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LogTailTests/LogTailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9641A0BC1966E67100C89FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LogTail.app/Contents/MacOS/LogTail";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
+				INFOPLIST_FILE = "LogTailTests/LogTailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9641A07B1966E67100C89FD9 /* Build configuration list for PBXProject "LogTail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9641A0B51966E67100C89FD9 /* Debug */,
+				9641A0B61966E67100C89FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9641A0B71966E67100C89FD9 /* Build configuration list for PBXNativeTarget "LogTail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9641A0B81966E67100C89FD9 /* Debug */,
+				9641A0B91966E67100C89FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9641A0BA1966E67100C89FD9 /* Build configuration list for PBXNativeTarget "LogTailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9641A0BB1966E67100C89FD9 /* Debug */,
+				9641A0BC1966E67100C89FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9641A09E1966E67100C89FD9 /* LTDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9641A09F1966E67100C89FD9 /* LTDocument.xcdatamodel */,
+			);
+			currentVersion = 9641A09F1966E67100C89FD9 /* LTDocument.xcdatamodel */;
+			path = LTDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9641A0781966E67100C89FD9 /* Project object */;
+}
