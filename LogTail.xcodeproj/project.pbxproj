@@ -208,6 +208,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Mandrake.net;
 				TargetAttributes = {
+					9641A07F1966E67100C89FD9 = {
+						DevelopmentTeam = D2FA7YYCVS;
+					};
 					9641A0A61966E67100C89FD9 = {
 						TestTargetID = 9641A07F1966E67100C89FD9;
 					};
@@ -402,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
@@ -415,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
