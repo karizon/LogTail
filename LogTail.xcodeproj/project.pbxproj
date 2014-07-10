@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96405E71196F2F8300978482 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96405E70196F2F8300978482 /* NMSSH.framework */; };
+		96405E72196F2F8300978482 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96405E70196F2F8300978482 /* NMSSH.framework */; };
+		96405E73196F2FB400978482 /* NMSSH.framework in Resources */ = {isa = PBXBuildFile; fileRef = 96405E70196F2F8300978482 /* NMSSH.framework */; };
+		96405E75196F301F00978482 /* NMSSH.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96405E70196F2F8300978482 /* NMSSH.framework */; };
 		9641A0841966E67100C89FD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641A0831966E67100C89FD9 /* Cocoa.framework */; };
 		9641A08E1966E67100C89FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9641A08C1966E67100C89FD9 /* InfoPlist.strings */; };
 		9641A0901966E67100C89FD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A08F1966E67100C89FD9 /* main.m */; };
@@ -32,7 +36,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		96405E74196F301300978482 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				96405E75196F301F00978482 /* NMSSH.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		96405E70196F2F8300978482 /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
 		9641A0801966E67100C89FD9 /* LogTail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogTail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9641A0831966E67100C89FD9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9641A0861966E67100C89FD9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -61,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96405E71196F2F8300978482 /* NMSSH.framework in Frameworks */,
 				9641A0841966E67100C89FD9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96405E72196F2F8300978482 /* NMSSH.framework in Frameworks */,
 				9641A0AA1966E67100C89FD9 /* Cocoa.framework in Frameworks */,
 				9641A0A91966E67100C89FD9 /* XCTest.framework in Frameworks */,
 			);
@@ -99,6 +119,7 @@
 		9641A0821966E67100C89FD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96405E70196F2F8300978482 /* NMSSH.framework */,
 				9641A0831966E67100C89FD9 /* Cocoa.framework */,
 				9641A0A81966E67100C89FD9 /* XCTest.framework */,
 				9641A0851966E67100C89FD9 /* Other Frameworks */,
@@ -170,6 +191,7 @@
 				9641A07C1966E67100C89FD9 /* Sources */,
 				9641A07D1966E67100C89FD9 /* Frameworks */,
 				9641A07E1966E67100C89FD9 /* Resources */,
+				96405E74196F301300978482 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -208,9 +230,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Mandrake.net;
 				TargetAttributes = {
-					9641A07F1966E67100C89FD9 = {
-						DevelopmentTeam = D2FA7YYCVS;
-					};
 					9641A0A61966E67100C89FD9 = {
 						TestTargetID = 9641A07F1966E67100C89FD9;
 					};
@@ -240,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96405E73196F2FB400978482 /* NMSSH.framework in Resources */,
 				9641A09A1966E67100C89FD9 /* LTDocument.xib in Resources */,
 				9641A0A21966E67100C89FD9 /* Images.xcassets in Resources */,
 				9641A08E1966E67100C89FD9 /* InfoPlist.strings in Resources */,
@@ -405,8 +425,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
 				INFOPLIST_FILE = "LogTail/LogTail-Info.plist";
@@ -419,8 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
 				INFOPLIST_FILE = "LogTail/LogTail-Info.plist";
@@ -437,6 +463,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
@@ -459,6 +486,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LogTail/LogTail-Prefix.pch";
@@ -488,6 +516,7 @@
 				9641A0B91966E67100C89FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9641A0BA1966E67100C89FD9 /* Build configuration list for PBXNativeTarget "LogTailTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +525,7 @@
 				9641A0BC1966E67100C89FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
