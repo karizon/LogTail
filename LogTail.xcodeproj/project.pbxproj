@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		96099C8F1971A26A00ED5152 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96099C8E1971A26A00ED5152 /* NMSSH.framework */; };
 		96099C901971A27000ED5152 /* NMSSH.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96099C8E1971A26A00ED5152 /* NMSSH.framework */; };
-		96099C911971A27300ED5152 /* NMSSH.framework in Resources */ = {isa = PBXBuildFile; fileRef = 96099C8E1971A26A00ED5152 /* NMSSH.framework */; };
 		9641A0841966E67100C89FD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641A0831966E67100C89FD9 /* Cocoa.framework */; };
 		9641A08E1966E67100C89FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9641A08C1966E67100C89FD9 /* InfoPlist.strings */; };
 		9641A0901966E67100C89FD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A08F1966E67100C89FD9 /* main.m */; };
@@ -260,7 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96099C911971A27300ED5152 /* NMSSH.framework in Resources */,
 				9641A09A1966E67100C89FD9 /* LTDocument.xib in Resources */,
 				9641A0A21966E67100C89FD9 /* Images.xcassets in Resources */,
 				9641A08E1966E67100C89FD9 /* InfoPlist.strings in Resources */,
