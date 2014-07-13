@@ -69,6 +69,14 @@
     
 }
 
+#pragma mark Document
+
++ (BOOL)autosavesInPlace {
+    return YES;
+}
+
+#pragma mark SSH Session
+
 - (void)session:(NMSSHSession *)session didDisconnectWithError:(NSError *)error {
     NSLog(@"LogTail: Session Disconnected with Error: %@", error.localizedDescription);
 }
@@ -100,9 +108,29 @@
     return request;
 }
 
+#pragma mark tableView
 
-+ (BOOL)autosavesInPlace {
-    return YES;
+- (NSInteger) numberOfRowsInTableView: (NSTableView *) tv {
+    NSLog(@"Asked for number of rows in table view");
+    return 0;
+}
+
+- (void) tableViewSelectionIsChanging:(NSNotification *) aNotification {
+    
+}
+
+- (void) tableViewSelectionDidChange:(NSNotification *) aNotification {
+
+}
+
+- (void) tableView:(NSTableView *)tv sortDescriptorsDidChange: (NSArray *)oldDescriptors {
+}
+
+- (id) tableView: (NSTableView *) tv objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    return nil;
+}
+
+- (void) tableView: (NSTableView *) tv willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)col row:(int)row {
 }
 
 @end
