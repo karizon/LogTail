@@ -18,7 +18,6 @@
 @property (nonatomic, strong) NSMutableString *lastCommand;
 @property (nonatomic, assign) BOOL keyboardInteractive;
 
-
 @end
 
 @implementation LTDocument
@@ -41,20 +40,56 @@
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
     
-    NMSSHSession *session = [NMSSHSession connectToHost:@"p3plananvar01" port:22 withUsername:@"root"];
-    
-    if(session.isConnected) {
-        NSLog(@"Connect succeeded");
-        [session connectToAgent]; // This is win right here boys and girls.
+    self.session = [NMSSHSession connectToHost:@"p3plananvar01" port:22 withUsername:@"root"];
+    self.session.delegate = self;
+
+    if(self.session.isConnected) {
+        NSLog(@"LogTail: Connect succeeded");
+        [self.session connectToAgent]; // This is win right here boys and girls.
         
-        if(session.authorized) {
-            NSLog(@"Auth succeeded!");
+        if(self.session.authorized) {
+            NSLog(@"LogTail: Auth succeeded!");
+            self.session.channel.delegate = self;
+            self.session.channel.requestPty = YES;
+
+            NSError *error;
+            [self.session.channel startShell:&error];
+            
+            if (error) {
+                NSLog(@"LogTail: Error starting shell: %@",error.localizedDescription);
+            } else {
+                NSLog(@"LogTail: Shell started.  issuing tail command");
+                [[self.session channel] write:@"tail -f /var/log/haproxy/haproxy.log\n" error:nil timeout:@10];
+            }
+            
         } else {
-            NSLog(@"Agent based authentication has failed.  Would resort to password here normally");
+            NSLog(@"LogTail: Agent based authentication has failed.  Would resort to password here normally");
         }
     }
     
 }
+
+- (void)session:(NMSSHSession *)session didDisconnectWithError:(NSError *)error {
+    NSLog(@"LogTail: Session Disconnected with Error: %@", error.localizedDescription);
+}
+
+- (void)channelShellDidClose:(NMSSHChannel *)channel {
+    NSLog(@"LogTail: Remote Shell Closed");
+}
+
+- (void)channel:(NMSSHChannel *)channel didReadData:(NSString *)message {
+    NSLog(@"LogTail: Received data: %@", message);
+}
+
+- (void)channel:(NMSSHChannel *)channel didReadError:(NSString *)error {
+    NSLog(@"LogTail: Read Error: %@", [NSString stringWithFormat:@"[ERROR] %@", error]);
+}
+
+- (NSString *)session:(NMSSHSession *)session keyboardInteractiveRequest:(NSString *)request {
+    NSLog(@"LogTail: Request for interactive data: %@",request);
+    return request;
+}
+
 
 + (BOOL)autosavesInPlace {
     return YES;
