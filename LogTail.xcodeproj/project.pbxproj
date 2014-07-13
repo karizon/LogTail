@@ -70,6 +70,7 @@
 		9641A0AF1966E67100C89FD9 /* LogTailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogTailTests-Info.plist"; sourceTree = "<group>"; };
 		9641A0B11966E67100C89FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9641A0B31966E67100C89FD9 /* LogTailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogTailTests.m; sourceTree = "<group>"; };
+		96C695FC19720E7800EAB220 /* LogTail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LogTail.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 		9641A0891966E67100C89FD9 /* LogTail */ = {
 			isa = PBXGroup;
 			children = (
+				96C695FC19720E7800EAB220 /* LogTail.entitlements */,
 				9641A0951966E67100C89FD9 /* LTDocument.h */,
 				9641A0961966E67100C89FD9 /* LTDocument.m */,
 				9641A0981966E67100C89FD9 /* LTDocument.xib */,
@@ -229,6 +231,11 @@
 				TargetAttributes = {
 					9641A07F1966E67100C89FD9 = {
 						DevelopmentTeam = D2FA7YYCVS;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					9641A0A61966E67100C89FD9 = {
 						TestTargetID = 9641A07F1966E67100C89FD9;
@@ -424,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LogTail/LogTail.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -442,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LogTail/LogTail.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (

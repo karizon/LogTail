@@ -3,7 +3,7 @@
 //  LogTail
 //
 //  Created by Geoff Harrison on 7/4/14.
-//  Copyright (c) 2014 Mandrake.net. All rights reserved.
+//  Copyright © 2014 Geoff Harrison <mandrake@mandrake.net>
 //
 
 #import <Cocoa/Cocoa.h>
