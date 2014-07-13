@@ -78,7 +78,17 @@
 }
 
 - (void)channel:(NMSSHChannel *)channel didReadData:(NSString *)message {
-    NSLog(@"LogTail: Received data: %@", message);
+    // NSLog(@"LogTail: Received data: %@", message);
+    NSError *error = NULL;
+    NSRegularExpression *regex = [NSRegularExpression
+                                  regularExpressionWithPattern:@"[ ]\\[(.+)\\][ ]"
+                                  options:NSRegularExpressionCaseInsensitive
+                                  error:&error];
+    [regex enumerateMatchesInString:message options:0 range:NSMakeRange(0, [message length]) usingBlock:^(NSTextCheckingResult *match, NSMatchingFlags flags, BOOL *stop){
+        NSRange myRange = NSMakeRange(match.range.location + 2, match.range.length - 4);
+        NSString *localMatch = [message substringWithRange:myRange];
+        NSLog(@"Found Date: %@",localMatch);
+    }];
 }
 
 - (void)channel:(NMSSHChannel *)channel didReadError:(NSString *)error {
