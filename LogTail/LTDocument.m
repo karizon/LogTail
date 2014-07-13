@@ -46,6 +46,7 @@
     if(session.isConnected) {
         NSLog(@"Connect succeeded");
         [session connectToAgent]; // This is win right here boys and girls.
+        
         if(session.authorized) {
             NSLog(@"Auth succeeded!");
         } else {
