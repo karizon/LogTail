@@ -18,6 +18,28 @@
 @property (nonatomic, strong) NSMutableString *lastCommand;
 @property (nonatomic, assign) BOOL keyboardInteractive;
 
+// Filtered Table
+
+@property (weak) IBOutlet NSTableView *unfilteredTableView;
+
+@property (weak) IBOutlet NSButton *viewDetailsButton;
+@property (weak) IBOutlet NSButton *adjustFilterButton;
+@property (weak) IBOutlet NSButton *clearSelectedButton;
+
+- (IBAction)viewDetails:(id)sender;
+- (IBAction)adjustFilter:(id)sender;
+- (IBAction)clearSelected:(id)sender;
+
+// Unfiltered Table
+
+@property (weak) IBOutlet NSTableView *filteredTableView;
+
+@property (weak) IBOutlet NSButton *createNewFilterButton;
+@property (weak) IBOutlet NSButton *purgeUnfilteredButton;
+
+- (IBAction)createNewFilter:(id)sender;
+- (IBAction)purgeUnfiltered:(id)sender;
+
 @end
 
 @implementation LTDocument
@@ -133,4 +155,18 @@
 - (void) tableView: (NSTableView *) tv willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)col row:(int)row {
 }
 
+- (IBAction)createNewFilter:(id)sender {
+}
+
+- (IBAction)purgeUnfiltered:(id)sender {
+}
+
+- (IBAction)viewDetails:(id)sender {
+}
+
+- (IBAction)adjustFilter:(id)sender {
+}
+
+- (IBAction)clearSelected:(id)sender {
+}
 @end

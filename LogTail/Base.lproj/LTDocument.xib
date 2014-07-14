@@ -6,6 +6,13 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="LTDocument">
             <connections>
+                <outlet property="adjustFilterButton" destination="6l8-8w-3wN" id="eRm-Pv-sZs"/>
+                <outlet property="clearSelectedButton" destination="P7q-Iq-w1G" id="wsV-Br-LHl"/>
+                <outlet property="createNewFilterButton" destination="GWf-g1-oDp" id="aPF-AZ-MpX"/>
+                <outlet property="filteredTableView" destination="ucr-Rp-V1O" id="dzp-6q-GTK"/>
+                <outlet property="purgeUnfilteredButton" destination="ux3-SS-Evq" id="mZe-gh-114"/>
+                <outlet property="unfilteredTableView" destination="O8f-8y-L1X" id="F9z-pd-Cy2"/>
+                <outlet property="viewDetailsButton" destination="hId-uI-902" id="g3s-cx-U6R"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
@@ -28,7 +35,7 @@
                             <rect key="frame" x="1" y="17" width="687" height="190"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="s4f-ui-4P7" id="ucr-Rp-V1O">
+                                <tableView identifier="filtered" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="s4f-ui-4P7" id="ucr-Rp-V1O">
                                     <rect key="frame" x="0.0" y="0.0" width="687" height="190"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
@@ -103,7 +110,7 @@
                             <rect key="frame" x="1" y="17" width="687" height="152"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="L8m-YJ-5Fw" id="O8f-8y-L1X">
+                                <tableView identifier="unfiltered" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="L8m-YJ-5Fw" id="O8f-8y-L1X">
                                     <rect key="frame" x="0.0" y="0.0" width="687" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
@@ -165,6 +172,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="purgeUnfiltered:" target="-2" id="xUu-mk-m8E"/>
+                        </connections>
                     </button>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pl5-6l-hA8">
                         <rect key="frame" x="18" y="295" width="18" height="150"/>
@@ -191,6 +201,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="adjustFilter:" target="-2" id="Hjg-Tg-8ZE"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P7q-Iq-w1G">
                         <rect key="frame" x="608" y="230" width="129" height="32"/>
@@ -199,6 +212,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="clearSelected:" target="-2" id="GF2-oP-eoB"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GWf-g1-oDp">
                         <rect key="frame" x="451" y="13" width="148" height="32"/>
@@ -207,6 +223,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="createNewFilter:" target="-2" id="86D-nr-V7F"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hId-uI-902">
                         <rect key="frame" x="376" y="230" width="117" height="32"/>
@@ -215,6 +234,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="viewDetails:" target="-2" id="WrQ-QC-OPg"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
