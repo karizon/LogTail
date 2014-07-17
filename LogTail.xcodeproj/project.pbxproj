@@ -138,13 +138,11 @@
 		9641A0891966E67100C89FD9 /* LogTail */ = {
 			isa = PBXGroup;
 			children = (
-				96C695FC19720E7800EAB220 /* LogTail.entitlements */,
 				9641A0951966E67100C89FD9 /* LTDocument.h */,
 				9641A0961966E67100C89FD9 /* LTDocument.m */,
 				9641A0981966E67100C89FD9 /* LTDocument.xib */,
 				9641A09B1966E67100C89FD9 /* MainMenu.xib */,
 				9641A0A11966E67100C89FD9 /* Images.xcassets */,
-				9641A09E1966E67100C89FD9 /* LTDocument.xcdatamodeld */,
 				9641A08A1966E67100C89FD9 /* Supporting Files */,
 			);
 			path = LogTail;
@@ -153,6 +151,8 @@
 		9641A08A1966E67100C89FD9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96C695FC19720E7800EAB220 /* LogTail.entitlements */,
+				9641A09E1966E67100C89FD9 /* LTDocument.xcdatamodeld */,
 				9641A08B1966E67100C89FD9 /* LogTail-Info.plist */,
 				9641A08C1966E67100C89FD9 /* InfoPlist.strings */,
 				9641A08F1966E67100C89FD9 /* main.m */,
