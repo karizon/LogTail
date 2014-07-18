@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Filter" representedClassName="Filter" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="filterType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="filterValue" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="logFile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LogFile" inverseName="filters" inverseEntity="LogFile" syncable="YES"/>
     </entity>
     <entity name="LogFile" representedClassName="LogFile" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="host" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="filters" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Filter" inverseName="logFile" inverseEntity="Filter" syncable="YES"/>
     </entity>
     <elements>
-        <element name="LogFile" positionX="-63" positionY="-18" width="128" height="88"/>
-        <element name="Filter" positionX="-54" positionY="9" width="128" height="88"/>
+        <element name="Filter" positionX="-54" positionY="9" width="128" height="105"/>
+        <element name="LogFile" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>
