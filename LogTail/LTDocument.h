@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface LTDocument : NSPersistentDocument
+@interface LTDocument : NSPersistentDocument {
+    IBOutlet NSWindow *configSheet;
+    IBOutlet NSButton *detailButton;
+
+}
 
 @end

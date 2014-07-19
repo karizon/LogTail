@@ -97,6 +97,20 @@
     return YES;
 }
 
+#pragma mark Config Sheet
+
+- (IBAction)openConfigSheet:(id)sender {
+    NSLog(@"Opening Config Sheet");
+    [NSApp beginSheet:configSheet modalForWindow:[_viewDetailsButton window] modalDelegate:nil didEndSelector:NULL contextInfo:NULL];
+}
+
+- (IBAction)endConfigSheet:(id)sender {
+    [NSApp endSheet:configSheet];
+    // Time to spawn the threads.
+    [configSheet orderOut:configSheet];
+}
+
+
 #pragma mark SSH Session
 
 - (void)session:(NMSSHSession *)session didDisconnectWithError:(NSError *)error {
@@ -117,7 +131,7 @@
     [regex enumerateMatchesInString:message options:0 range:NSMakeRange(0, [message length]) usingBlock:^(NSTextCheckingResult *match, NSMatchingFlags flags, BOOL *stop){
         NSRange myRange = NSMakeRange(match.range.location + 2, match.range.length - 4);
         NSString *localMatch = [message substringWithRange:myRange];
-        NSLog(@"Found Date: %@",localMatch);
+        // NSLog(@"Found Date: %@",localMatch);
     }];
 }
 
