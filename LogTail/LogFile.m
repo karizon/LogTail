@@ -2,17 +2,19 @@
 //  LogFile.m
 //  LogTail
 //
-//  Created by Geoff Harrison on 7/17/14.
-//  Copyright (c) 2014 Mandrake.net. All rights reserved.
+//  Created by Geoff Harrison on 7/20/14.
+//  Copyright © 2014 Geoff Harrison <mandrake@mandrake.net>
 //
 
 #import "LogFile.h"
+#import "Filter.h"
 
 
 @implementation LogFile
 
-@dynamic host;
+@dynamic active;
 @dynamic filename;
+@dynamic host;
 @dynamic filters;
 
 @end

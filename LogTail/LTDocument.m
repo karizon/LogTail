@@ -62,6 +62,7 @@
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
     
+    /*
     self.session = [NMSSHSession connectToHost:@"p3plananvar01" port:22 withUsername:@"root"];
     self.session.delegate = self;
 
@@ -88,13 +89,14 @@
             NSLog(@"LogTail: Agent based authentication has failed.  Would resort to password here normally");
         }
     }
+     */
     
 }
 
 #pragma mark Document
 
 + (BOOL)autosavesInPlace {
-    return YES;
+    return NO;
 }
 
 #pragma mark Config Sheet
@@ -122,7 +124,8 @@
 }
 
 - (void)channel:(NMSSHChannel *)channel didReadData:(NSString *)message {
-    // NSLog(@"LogTail: Received data: %@", message);
+    NSLog(@"LogTail: Received data: %@", message);
+    /*
     NSError *error = NULL;
     NSRegularExpression *regex = [NSRegularExpression
                                   regularExpressionWithPattern:@"[ ]\\[(.+)\\][ ]"
@@ -133,6 +136,7 @@
         NSString *localMatch = [message substringWithRange:myRange];
         // NSLog(@"Found Date: %@",localMatch);
     }];
+     */
 }
 
 - (void)channel:(NMSSHChannel *)channel didReadError:(NSString *)error {

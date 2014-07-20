@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		96099C8F1971A26A00ED5152 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96099C8E1971A26A00ED5152 /* NMSSH.framework */; };
 		96099C901971A27000ED5152 /* NMSSH.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96099C8E1971A26A00ED5152 /* NMSSH.framework */; };
-		9624C8741977F272005688CF /* LogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9624C8731977F272005688CF /* LogFile.m */; };
-		9624C8771977F273005688CF /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9624C8761977F273005688CF /* Filter.m */; };
+		96266E58197C2228009DAB36 /* LogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96266E57197C2228009DAB36 /* LogFile.m */; };
+		96266E5B197C2228009DAB36 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96266E5A197C2228009DAB36 /* Filter.m */; };
 		9641A0841966E67100C89FD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641A0831966E67100C89FD9 /* Cocoa.framework */; };
 		9641A08E1966E67100C89FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9641A08C1966E67100C89FD9 /* InfoPlist.strings */; };
 		9641A0901966E67100C89FD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A08F1966E67100C89FD9 /* main.m */; };
@@ -51,10 +51,10 @@
 
 /* Begin PBXFileReference section */
 		96099C8E1971A26A00ED5152 /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
-		9624C8721977F272005688CF /* LogFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogFile.h; sourceTree = "<group>"; };
-		9624C8731977F272005688CF /* LogFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogFile.m; sourceTree = "<group>"; };
-		9624C8751977F273005688CF /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
-		9624C8761977F273005688CF /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		96266E56197C2228009DAB36 /* LogFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogFile.h; sourceTree = "<group>"; };
+		96266E57197C2228009DAB36 /* LogFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogFile.m; sourceTree = "<group>"; };
+		96266E59197C2228009DAB36 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		96266E5A197C2228009DAB36 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
 		9641A0801966E67100C89FD9 /* LogTail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogTail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9641A0831966E67100C89FD9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9641A0861966E67100C89FD9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -144,10 +144,10 @@
 		9641A0891966E67100C89FD9 /* LogTail */ = {
 			isa = PBXGroup;
 			children = (
-				9624C8751977F273005688CF /* Filter.h */,
-				9624C8761977F273005688CF /* Filter.m */,
-				9624C8721977F272005688CF /* LogFile.h */,
-				9624C8731977F272005688CF /* LogFile.m */,
+				96266E59197C2228009DAB36 /* Filter.h */,
+				96266E5A197C2228009DAB36 /* Filter.m */,
+				96266E56197C2228009DAB36 /* LogFile.h */,
+				96266E57197C2228009DAB36 /* LogFile.m */,
 				9641A0951966E67100C89FD9 /* LTDocument.h */,
 				9641A0961966E67100C89FD9 /* LTDocument.m */,
 				9641A0981966E67100C89FD9 /* LTDocument.xib */,
@@ -301,9 +301,9 @@
 			files = (
 				9641A0971966E67100C89FD9 /* LTDocument.m in Sources */,
 				9641A0901966E67100C89FD9 /* main.m in Sources */,
-				9624C8741977F272005688CF /* LogFile.m in Sources */,
+				96266E58197C2228009DAB36 /* LogFile.m in Sources */,
 				9641A0A01966E67100C89FD9 /* LTDocument.xcdatamodeld in Sources */,
-				9624C8771977F273005688CF /* Filter.m in Sources */,
+				96266E5B197C2228009DAB36 /* Filter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

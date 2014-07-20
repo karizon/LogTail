@@ -307,6 +307,9 @@
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="Isw-xe-T8K" name="value" keyPath="arrangedObjects.filename" id="lZl-BY-wgg"/>
+                                            </connections>
                                         </tableColumn>
                                         <tableColumn width="40" minWidth="40" maxWidth="1000" id="RlB-gf-qet">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Active">
@@ -314,12 +317,14 @@
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="wJs-Q2-AGx">
+                                            <buttonCell key="dataCell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="only" inset="2" id="Dok-lr-dGH">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
+                                            </buttonCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="Isw-xe-T8K" name="value" keyPath="arrangedObjects.active" id="MuV-a8-BqJ"/>
+                                            </connections>
                                         </tableColumn>
                                     </tableColumns>
                                 </tableView>
@@ -350,6 +355,10 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="add:" target="Isw-xe-T8K" id="5XE-PL-kXI"/>
+                            <binding destination="Isw-xe-T8K" name="enabled" keyPath="canAdd" id="UtM-Tx-qNg"/>
+                        </connections>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="GsV-f3-Wl7">
                         <rect key="frame" x="161" y="51" width="18" height="20"/>
@@ -361,6 +370,10 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="remove:" target="Isw-xe-T8K" id="kci-iM-TDz"/>
+                            <binding destination="Isw-xe-T8K" name="enabled" keyPath="canRemove" id="Qzx-25-rwQ"/>
+                        </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jz8-BS-7D4">
                         <rect key="frame" x="192" y="278" width="72" height="17"/>
@@ -382,6 +395,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="Isw-xe-T8K" name="value" keyPath="selection.host" id="REv-1F-8nB"/>
+                        </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L0Q-GQ-aBM">
                         <rect key="frame" x="199" y="248" width="65" height="17"/>
@@ -400,6 +416,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="Isw-xe-T8K" name="value" keyPath="selection.filename" id="pEP-Yo-E7D"/>
+                        </connections>
                     </textField>
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plX-yH-IGz">
                         <rect key="frame" x="194" y="70" width="381" height="151"/>
@@ -427,6 +446,9 @@
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="BQJ-y9-2Se" name="value" keyPath="arrangedObjects.filterType" id="cGi-pZ-dKJ"/>
+                                            </connections>
                                         </tableColumn>
                                         <tableColumn width="253.34765625" minWidth="40" maxWidth="1000" id="0gj-Dk-aPv">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Filter Activity">
@@ -440,6 +462,9 @@
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="BQJ-y9-2Se" name="value" keyPath="arrangedObjects.filterValue" id="6ZY-fg-fO4"/>
+                                            </connections>
                                         </tableColumn>
                                         <tableColumn width="37" minWidth="10" maxWidth="3.4028234663852886e+38" id="nD0-CQ-3MY">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Active">
@@ -447,12 +472,14 @@
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="yjc-9N-HEf">
+                                            <buttonCell key="dataCell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="only" inset="2" id="cYW-ef-j2f">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
+                                            </buttonCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="BQJ-y9-2Se" name="value" keyPath="arrangedObjects.active" id="czF-rZ-oSN"/>
+                                            </connections>
                                         </tableColumn>
                                     </tableColumns>
                                 </tableView>
@@ -500,6 +527,10 @@ Gw
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="add:" target="BQJ-y9-2Se" id="qah-eu-KME"/>
+                            <binding destination="BQJ-y9-2Se" name="enabled" keyPath="canAdd" id="VRG-6z-gPj"/>
+                        </connections>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="eKf-9H-YZ6">
                         <rect key="frame" x="557" y="51" width="18" height="20"/>
@@ -511,6 +542,10 @@ Gw
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="remove:" target="BQJ-y9-2Se" id="BF9-cb-PfK"/>
+                            <binding destination="BQJ-y9-2Se" name="enabled" keyPath="canRemove" id="8hj-wf-iOB"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -546,7 +581,16 @@ Gw
                 </constraints>
             </view>
         </window>
-        <arrayController mode="entity" entityName="Filter" automaticallyPreparesContent="YES" id="BQJ-y9-2Se" userLabel="Filter"/>
-        <arrayController mode="entity" entityName="LogFile" automaticallyPreparesContent="YES" id="Isw-xe-T8K" userLabel="LogFile"/>
+        <arrayController mode="entity" entityName="LogFile" automaticallyPreparesContent="YES" id="Isw-xe-T8K" userLabel="LogFile">
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="HUP-Pf-8ff"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Filter" automaticallyPreparesContent="YES" id="BQJ-y9-2Se" userLabel="Filter">
+            <connections>
+                <binding destination="Isw-xe-T8K" name="contentSet" keyPath="selection.filters" id="Ie5-yb-XLw"/>
+                <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="WDA-U3-nxo"/>
+            </connections>
+        </arrayController>
     </objects>
 </document>
