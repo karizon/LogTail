@@ -317,7 +317,7 @@
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
-                                            <buttonCell key="dataCell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="only" inset="2" id="Dok-lr-dGH">
+                                            <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="overlaps" inset="2" id="Dok-lr-dGH">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -472,7 +472,7 @@
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <buttonCell key="dataCell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="only" inset="2" id="cYW-ef-j2f">
+                                            <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="overlaps" inset="2" id="cYW-ef-j2f">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -588,8 +588,8 @@ Gw
         </arrayController>
         <arrayController mode="entity" entityName="Filter" automaticallyPreparesContent="YES" id="BQJ-y9-2Se" userLabel="Filter">
             <connections>
-                <binding destination="Isw-xe-T8K" name="contentSet" keyPath="selection.filters" id="Ie5-yb-XLw"/>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="WDA-U3-nxo"/>
+                <binding destination="Isw-xe-T8K" name="contentSet" keyPath="selection.filters" id="Ie5-yb-XLw"/>
             </connections>
         </arrayController>
     </objects>
