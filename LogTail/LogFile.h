@@ -2,8 +2,8 @@
 //  LogFile.h
 //  LogTail
 //
-//  Created by Geoff Harrison on 7/20/14.
-//  Copyright © 2014 Geoff Harrison <mandrake@mandrake.net>
+//  Created by Geoff Harrison on 7/21/14.
+//  Copyright (c) 2014 Mandrake.net. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,6 +16,14 @@
 @property (nonatomic, retain) NSNumber * active;
 @property (nonatomic, retain) NSString * filename;
 @property (nonatomic, retain) NSString * host;
-@property (nonatomic, retain) Filter *filters;
+@property (nonatomic, retain) NSSet *filters;
+@end
+
+@interface LogFile (CoreDataGeneratedAccessors)
+
+- (void)addFiltersObject:(Filter *)value;
+- (void)removeFiltersObject:(Filter *)value;
+- (void)addFilters:(NSSet *)values;
+- (void)removeFilters:(NSSet *)values;
 
 @end

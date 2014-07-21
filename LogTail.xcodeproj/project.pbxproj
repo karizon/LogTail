@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		96099C8F1971A26A00ED5152 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96099C8E1971A26A00ED5152 /* NMSSH.framework */; };
 		96099C901971A27000ED5152 /* NMSSH.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96099C8E1971A26A00ED5152 /* NMSSH.framework */; };
-		96266E58197C2228009DAB36 /* LogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96266E57197C2228009DAB36 /* LogFile.m */; };
-		96266E5B197C2228009DAB36 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96266E5A197C2228009DAB36 /* Filter.m */; };
 		9641A0841966E67100C89FD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641A0831966E67100C89FD9 /* Cocoa.framework */; };
 		9641A08E1966E67100C89FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9641A08C1966E67100C89FD9 /* InfoPlist.strings */; };
 		9641A0901966E67100C89FD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A08F1966E67100C89FD9 /* main.m */; };
@@ -24,6 +22,8 @@
 		9641A0AA1966E67100C89FD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641A0831966E67100C89FD9 /* Cocoa.framework */; };
 		9641A0B21966E67100C89FD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9641A0B01966E67100C89FD9 /* InfoPlist.strings */; };
 		9641A0B41966E67100C89FD9 /* LogTailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A0B31966E67100C89FD9 /* LogTailTests.m */; };
+		96C13519197DBA7F0035FF84 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C13518197DBA7F0035FF84 /* Filter.m */; };
+		96C1351C197DBA800035FF84 /* LogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1351B197DBA800035FF84 /* LogFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +51,6 @@
 
 /* Begin PBXFileReference section */
 		96099C8E1971A26A00ED5152 /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
-		96266E56197C2228009DAB36 /* LogFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogFile.h; sourceTree = "<group>"; };
-		96266E57197C2228009DAB36 /* LogFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogFile.m; sourceTree = "<group>"; };
-		96266E59197C2228009DAB36 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
-		96266E5A197C2228009DAB36 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
 		9641A0801966E67100C89FD9 /* LogTail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogTail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9641A0831966E67100C89FD9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9641A0861966E67100C89FD9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -76,6 +72,10 @@
 		9641A0AF1966E67100C89FD9 /* LogTailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogTailTests-Info.plist"; sourceTree = "<group>"; };
 		9641A0B11966E67100C89FD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9641A0B31966E67100C89FD9 /* LogTailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogTailTests.m; sourceTree = "<group>"; };
+		96C13517197DBA7F0035FF84 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		96C13518197DBA7F0035FF84 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		96C1351A197DBA800035FF84 /* LogFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogFile.h; sourceTree = "<group>"; };
+		96C1351B197DBA800035FF84 /* LogFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogFile.m; sourceTree = "<group>"; };
 		96C695FC19720E7800EAB220 /* LogTail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LogTail.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,10 +144,10 @@
 		9641A0891966E67100C89FD9 /* LogTail */ = {
 			isa = PBXGroup;
 			children = (
-				96266E56197C2228009DAB36 /* LogFile.h */,
-				96266E57197C2228009DAB36 /* LogFile.m */,
-				96266E59197C2228009DAB36 /* Filter.h */,
-				96266E5A197C2228009DAB36 /* Filter.m */,
+				96C1351A197DBA800035FF84 /* LogFile.h */,
+				96C1351B197DBA800035FF84 /* LogFile.m */,
+				96C13517197DBA7F0035FF84 /* Filter.h */,
+				96C13518197DBA7F0035FF84 /* Filter.m */,
 				9641A0951966E67100C89FD9 /* LTDocument.h */,
 				9641A0961966E67100C89FD9 /* LTDocument.m */,
 				9641A0981966E67100C89FD9 /* LTDocument.xib */,
@@ -300,10 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9641A0971966E67100C89FD9 /* LTDocument.m in Sources */,
+				96C13519197DBA7F0035FF84 /* Filter.m in Sources */,
 				9641A0901966E67100C89FD9 /* main.m in Sources */,
-				96266E58197C2228009DAB36 /* LogFile.m in Sources */,
+				96C1351C197DBA800035FF84 /* LogFile.m in Sources */,
 				9641A0A01966E67100C89FD9 /* LTDocument.xcdatamodeld in Sources */,
-				96266E5B197C2228009DAB36 /* Filter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
