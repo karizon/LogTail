@@ -25,6 +25,8 @@
 		96C13519197DBA7F0035FF84 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C13518197DBA7F0035FF84 /* Filter.m */; };
 		96C1351C197DBA800035FF84 /* LogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1351B197DBA800035FF84 /* LogFile.m */; };
 		96C1351F197DF48D0035FF84 /* LTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1351E197DF48D0035FF84 /* LTAppDelegate.m */; };
+		96C13522197EEBF30035FF84 /* LTFilteredResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C13521197EEBF30035FF84 /* LTFilteredResult.m */; };
+		96C13525197EEC010035FF84 /* LTUnfilteredResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C13524197EEC010035FF84 /* LTUnfilteredResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		96C1351B197DBA800035FF84 /* LogFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogFile.m; sourceTree = "<group>"; };
 		96C1351D197DF48D0035FF84 /* LTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAppDelegate.h; sourceTree = "<group>"; };
 		96C1351E197DF48D0035FF84 /* LTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAppDelegate.m; sourceTree = "<group>"; };
+		96C13520197EEBF30035FF84 /* LTFilteredResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTFilteredResult.h; sourceTree = "<group>"; };
+		96C13521197EEBF30035FF84 /* LTFilteredResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTFilteredResult.m; sourceTree = "<group>"; };
+		96C13523197EEC010035FF84 /* LTUnfilteredResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTUnfilteredResult.h; sourceTree = "<group>"; };
+		96C13524197EEC010035FF84 /* LTUnfilteredResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTUnfilteredResult.m; sourceTree = "<group>"; };
 		96C695FC19720E7800EAB220 /* LogTail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LogTail.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +159,10 @@
 				96C13518197DBA7F0035FF84 /* Filter.m */,
 				9641A0951966E67100C89FD9 /* LTDocument.h */,
 				9641A0961966E67100C89FD9 /* LTDocument.m */,
+				96C13520197EEBF30035FF84 /* LTFilteredResult.h */,
+				96C13521197EEBF30035FF84 /* LTFilteredResult.m */,
+				96C13523197EEC010035FF84 /* LTUnfilteredResult.h */,
+				96C13524197EEC010035FF84 /* LTUnfilteredResult.m */,
 				96C1351D197DF48D0035FF84 /* LTAppDelegate.h */,
 				96C1351E197DF48D0035FF84 /* LTAppDelegate.m */,
 				9641A0981966E67100C89FD9 /* LTDocument.xib */,
@@ -304,10 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C13525197EEC010035FF84 /* LTUnfilteredResult.m in Sources */,
 				9641A0971966E67100C89FD9 /* LTDocument.m in Sources */,
 				96C13519197DBA7F0035FF84 /* Filter.m in Sources */,
 				9641A0901966E67100C89FD9 /* main.m in Sources */,
 				96C1351C197DBA800035FF84 /* LogFile.m in Sources */,
+				96C13522197EEBF30035FF84 /* LTFilteredResult.m in Sources */,
 				96C1351F197DF48D0035FF84 /* LTAppDelegate.m in Sources */,
 				9641A0A01966E67100C89FD9 /* LTDocument.xcdatamodeld in Sources */,
 			);
