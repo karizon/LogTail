@@ -24,6 +24,7 @@
 		9641A0B41966E67100C89FD9 /* LogTailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A0B31966E67100C89FD9 /* LogTailTests.m */; };
 		96C13519197DBA7F0035FF84 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C13518197DBA7F0035FF84 /* Filter.m */; };
 		96C1351C197DBA800035FF84 /* LogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1351B197DBA800035FF84 /* LogFile.m */; };
+		96C1351F197DF48D0035FF84 /* LTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1351E197DF48D0035FF84 /* LTAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		96C13518197DBA7F0035FF84 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
 		96C1351A197DBA800035FF84 /* LogFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogFile.h; sourceTree = "<group>"; };
 		96C1351B197DBA800035FF84 /* LogFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogFile.m; sourceTree = "<group>"; };
+		96C1351D197DF48D0035FF84 /* LTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAppDelegate.h; sourceTree = "<group>"; };
+		96C1351E197DF48D0035FF84 /* LTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAppDelegate.m; sourceTree = "<group>"; };
 		96C695FC19720E7800EAB220 /* LogTail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LogTail.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +153,8 @@
 				96C13518197DBA7F0035FF84 /* Filter.m */,
 				9641A0951966E67100C89FD9 /* LTDocument.h */,
 				9641A0961966E67100C89FD9 /* LTDocument.m */,
+				96C1351D197DF48D0035FF84 /* LTAppDelegate.h */,
+				96C1351E197DF48D0035FF84 /* LTAppDelegate.m */,
 				9641A0981966E67100C89FD9 /* LTDocument.xib */,
 				9641A09B1966E67100C89FD9 /* MainMenu.xib */,
 				9641A08A1966E67100C89FD9 /* Supporting Files */,
@@ -303,6 +308,7 @@
 				96C13519197DBA7F0035FF84 /* Filter.m in Sources */,
 				9641A0901966E67100C89FD9 /* main.m in Sources */,
 				96C1351C197DBA800035FF84 /* LogFile.m in Sources */,
+				96C1351F197DF48D0035FF84 /* LTAppDelegate.m in Sources */,
 				9641A0A01966E67100C89FD9 /* LTDocument.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
