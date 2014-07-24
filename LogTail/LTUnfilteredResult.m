@@ -22,4 +22,20 @@
 
 @implementation LTUnfilteredResult
 
+
+@synthesize eventString;
+@synthesize eventTime;
+@synthesize eventFile;
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        eventTime = [NSDate date];
+        eventString = nil;
+        eventFile = nil;
+    }
+    
+    return self;
+}
+
 @end

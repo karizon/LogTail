@@ -1,9 +1,9 @@
 //
-//  LTUnfilteredResult.h
-//  LogTail
+//  General.m
+//  DB Monitor
 //
-//  Created by Geoff Harrison on 7/22/14.
-//  Copyright (c) 2014 Mandrake.net. All rights reserved.
+//  Created by Geoff Harrison on 5/31/13.
+//    Copyright 2014 Geoff Harrison
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -18,15 +18,12 @@
 // limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
+#import "General.h"
 
-@class LogFile;
-@class Filter;
 
-@interface LTUnfilteredResult : NSObject
+@implementation General
 
-@property (nonatomic) LogFile *eventFile;
-@property (nonatomic) NSDate *eventTime;
-@property (nonatomic) NSString * eventString;
+@dynamic trackEnabled;
+@dynamic trackTimer;
 
 @end
