@@ -1,9 +1,9 @@
 //
 //  General.h
-//  DB Monitor
+//  LogTail
 //
 //  Created by Geoff Harrison on 5/31/13.
-//    Copyright 2014 Geoff Harrison
+//  Copyright © 2014 Geoff Harrison <mandrake@mandrake.net>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
