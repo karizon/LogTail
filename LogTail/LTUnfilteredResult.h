@@ -3,7 +3,7 @@
 //  LogTail
 //
 //  Created by Geoff Harrison on 7/22/14.
-//  Copyright (c) 2014 Mandrake.net. All rights reserved.
+//  Copyright © 2014 Geoff Harrison <mandrake@mandrake.net>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
