@@ -27,6 +27,7 @@
 
 @property (nonatomic) LogFile *eventFile;
 @property (nonatomic) NSDate *eventTime;
-@property (nonatomic) NSString * eventString;
+@property (nonatomic) NSString *eventString;
+@property (nonatomic) NSDate *displayTimeout;
 
 @end

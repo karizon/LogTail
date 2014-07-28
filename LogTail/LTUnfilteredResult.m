@@ -25,16 +25,30 @@
 @synthesize eventString;
 @synthesize eventTime;
 @synthesize eventFile;
+@synthesize displayTimeout;
 
-- (id)init {
+- (id)initWithLogFile:(LogFile *) logFile eventFile:(NSString *) event {
+    
     self = [super init];
     if (self) {
         eventTime = [NSDate date];
-        eventString = nil;
-        eventFile = nil;
+        eventString = event;
+        eventFile = logFile;
+        displayTimeout = nil;
     }
     
     return self;
+}
+
+- (id)init {
+    return [self initWithLogFile:nil eventFile:nil];
+}
+
+- (void) dealloc {
+    eventTime = nil;
+    eventString = nil;
+    eventFile = nil;
+    displayTimeout = nil;
 }
 
 @end
