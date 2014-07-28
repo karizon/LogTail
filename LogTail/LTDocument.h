@@ -20,10 +20,21 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class LTUnfilteredResult;
+@class LTFilteredResult;
+
 @interface LTDocument : NSPersistentDocument {
     IBOutlet NSWindow *configSheet;
     IBOutlet NSButton *detailButton;
 
+    NSMutableArray *unfilteredList;
+    NSMutableArray *filteredList;
+    
+    __weak NSTableView *_filteredView;
+    __weak NSTableView *_unfilteredView;
 }
+
+@property (weak) IBOutlet NSTableView *unfilteredView;
+@property (weak) IBOutlet NSTableView *filteredView;
 
 @end

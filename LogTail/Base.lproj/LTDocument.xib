@@ -12,8 +12,10 @@
                 <outlet property="createNewFilterButton" destination="GWf-g1-oDp" id="aPF-AZ-MpX"/>
                 <outlet property="detailButton" destination="hId-uI-902" id="2nc-Ur-GCj"/>
                 <outlet property="filteredTableView" destination="ucr-Rp-V1O" id="dzp-6q-GTK"/>
+                <outlet property="filteredView" destination="ucr-Rp-V1O" id="Tsh-Vr-E0o"/>
                 <outlet property="purgeUnfilteredButton" destination="ux3-SS-Evq" id="mZe-gh-114"/>
                 <outlet property="unfilteredTableView" destination="O8f-8y-L1X" id="F9z-pd-Cy2"/>
+                <outlet property="unfilteredView" destination="O8f-8y-L1X" id="Tcb-GJ-Akj"/>
                 <outlet property="viewDetailsButton" destination="hId-uI-902" id="g3s-cx-U6R"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>

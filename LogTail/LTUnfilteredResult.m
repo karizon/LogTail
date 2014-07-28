@@ -22,7 +22,6 @@
 
 @implementation LTUnfilteredResult
 
-
 @synthesize eventString;
 @synthesize eventTime;
 @synthesize eventFile;

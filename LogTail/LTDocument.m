@@ -19,6 +19,8 @@
 //
 
 #import "LTDocument.h"
+#import "LTUnfilteredResult.h"
+#import "LTFilteredResult.h"
 #import <NMSSH/NMSSH.h>
 
 @interface LTDocument () <NMSSHChannelDelegate, NMSSHSessionDelegate>
@@ -74,7 +76,7 @@
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
     
-    /*
+    
     self.session = [NMSSHSession connectToHost:@"p3plananvar01" port:22 withUsername:@"root"];
     self.session.delegate = self;
 
@@ -101,7 +103,6 @@
             NSLog(@"LogTail: Agent based authentication has failed.  Would resort to password here normally");
         }
     }
-     */
     
 }
 
@@ -136,7 +137,8 @@
 }
 
 - (void)channel:(NMSSHChannel *)channel didReadData:(NSString *)message {
-    NSLog(@"LogTail: Received data: %@", message);
+    // NSLog(@"LogTail: Received data: %@", message);
+
     /*
     NSError *error = NULL;
     NSRegularExpression *regex = [NSRegularExpression
@@ -149,6 +151,7 @@
         // NSLog(@"Found Date: %@",localMatch);
     }];
      */
+    
 }
 
 - (void)channel:(NMSSHChannel *)channel didReadError:(NSString *)error {
@@ -163,7 +166,14 @@
 #pragma mark tableView
 
 - (NSInteger) numberOfRowsInTableView: (NSTableView *) tv {
-    NSLog(@"Asked for number of rows in table view");
+    if(tv == _filteredTableView) {
+        NSLog(@"Asked for number in filtered view");
+        return [filteredList count];
+    } else if (tv == _unfilteredTableView) {
+        NSLog(@"Asked for number in unfiltered view");
+        return [unfilteredList count];
+    }
+    
     return 0;
 }
 
@@ -179,24 +189,35 @@
 }
 
 - (id) tableView: (NSTableView *) tv objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    if(tv == _unfilteredView) {
+        if(row < [unfilteredList count]) {
+        }
+    }
+    
     return nil;
+    
 }
 
 - (void) tableView: (NSTableView *) tv willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)col row:(int)row {
 }
 
 - (IBAction)createNewFilter:(id)sender {
+    NSLog(@"LogTail: Creating new filter");
 }
 
 - (IBAction)purgeUnfiltered:(id)sender {
+    NSLog(@"Purging unfiltered data");
 }
 
 - (IBAction)viewDetails:(id)sender {
+    NSLog(@"Viewing Details");
 }
 
 - (IBAction)adjustFilter:(id)sender {
+    NSLog(@"Editing Filter");
 }
 
 - (IBAction)clearSelected:(id)sender {
+    NSLog(@"Clearing selected");
 }
 @end
